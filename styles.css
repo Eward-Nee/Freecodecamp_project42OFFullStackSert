@@ -1,0 +1,112 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+#video {
+    width: 50%;
+    aspect-ratio: 16/9;
+    border: 2px double greenyellow;
+    border-radius: 20px;
+    display: block;
+    margin: 0 auto;
+}
+
+#media-section {
+    width: 100vw;
+    text-align: center;
+}
+
+body {
+    background: linear-gradient(45deg, rgb(40, 85, 88), rgb(99, 88, 150));
+}
+
+a {
+    color: wheat;
+}
+
+#navbar a {
+    text-decoration: none;
+}
+
+#navbar li {
+    list-style: none;
+    border: 2px solid whitesmoke;
+    border-radius: 10px;
+    text-align: center;
+
+    font-size: 1.4rem;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+
+    display: grid;
+    transition: 0.2s ease-in-out;
+}
+
+#navbar li:hover {
+    background-color: rgb(49, 49, 107);
+}
+
+#navbar ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 5px 20px;
+    background-color: rgb(21, 21, 61);
+    width: 90%;
+    border-radius: 0 0 10px 10px;
+}
+
+#navbar {
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+
+    display: flex;
+    justify-content: center;
+}
+
+#welcome-section {
+    height: 100vh;
+    padding-top: 100px;
+}
+
+#project-section {
+    height: 100vh;
+    padding-top: 100px;
+}
+
+#media-section {
+    padding-top: 100px;
+    margin-bottom: 100px;
+}
+
+
+@media screen and (max-width:700px) {
+    #navbar ul {
+        grid-template-columns: 1fr;
+        gap: 10px;
+        width: 95%;
+    }
+
+    #welcome-section {
+        padding-top: 200px;
+    }
+
+    #project-section {
+        padding-top: 200px;
+    }
+
+    #media-section {
+        padding-top: 200px;
+    }
+
+    #video {
+        width: 90%;
+    }
+}
